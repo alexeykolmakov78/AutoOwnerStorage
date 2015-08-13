@@ -1,0 +1,112 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+    <!--<web-app>-->
+    <display-name>Archetype Created Web Application</display-name>
+    <!-- servlets-->
+    <servlet>
+        <servlet-name>homeServlet</servlet-name>
+        <servlet-class>it.source.servlet.HomeServlet</servlet-class>
+    </servlet>
+    <!--<servlet>-->
+    <!--<servlet-name>searchServlet</servlet-name>-->
+    <!--<servlet-class>it.source.servlet.SearchServlet</servlet-class>-->
+    <!--</servlet>-->
+    <servlet>
+        <servlet-name>vehicleServlet</servlet-name>
+        <servlet-class>it.source.servlet.VehicleServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>autoOwnerServlet</servlet-name>
+        <servlet-class>it.source.servlet.AutoOwnerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>rtaServlet</servlet-name>
+        <servlet-class>it.source.servlet.RTAServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>offenceServlet</servlet-name>
+        <servlet-class>it.source.servlet.OffenceServlet</servlet-class>
+    </servlet>
+    <!--jsp-->
+    <servlet>
+        <servlet-name>home.jsp</servlet-name>
+        <jsp-file>/pages/home.jsp</jsp-file>
+    </servlet>
+    <!--<servlet>-->
+    <!--<servlet-name>search.jsp</servlet-name>-->
+    <!--<jsp-file>/pages/search.jsp</jsp-file>-->
+    <!--</servlet>-->
+    <servlet>
+        <servlet-name>vehicle.jsp</servlet-name>
+        <jsp-file>/pages/vehicle.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>autoowner.jsp</servlet-name>
+        <jsp-file>/pages/autoowner.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>rta.jsp</servlet-name>
+        <jsp-file>/pages/rta.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>offence.jsp</servlet-name>
+        <jsp-file>/pages/offence.jsp</jsp-file>
+    </servlet>
+
+    <!--servlet mapping-->
+    <servlet-mapping>
+        <servlet-name>homeServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>searchServlet</servlet-name>-->
+    <!--<url-pattern>/search</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>vehicleServlet</servlet-name>
+        <url-pattern>/vehicle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>autoOwnerServlet</servlet-name>
+        <url-pattern>/autoowner</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>rtaServlet</servlet-name>
+        <url-pattern>/rta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>offenceServlet</servlet-name>
+        <url-pattern>/offence</url-pattern>
+    </servlet-mapping>
+    <!-- jsp mapping-->
+    <servlet-mapping>
+        <servlet-name>home.jsp</servlet-name>
+        <url-pattern>/home.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>vehicle.jsp</servlet-name>
+        <url-pattern>/vehicle.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>autoowner.jsp</servlet-name>
+        <url-pattern>/autoowner.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>rta.jsp</servlet-name>
+        <url-pattern>/rta.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>offence.jsp</servlet-name>
+        <url-pattern>/offence.jsp</url-pattern>
+    </servlet-mapping>
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>search.jsp</servlet-name>-->
+    <!--<url-pattern>/search.jsp</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+</web-app>

@@ -1,0 +1,8 @@
+08-04 04:31:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "VEHICLE" не найдена
+Table "VEHICLE" not found; SQL statement:
+SELECT t.* FROM PUBLIC.VEHICLE t [42102-176]
+08-04 04:32:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "AUTOOWNER" не найдена
+Table "AUTOOWNER" not found; SQL statement:
+SELECT t.* FROM PUBLIC.AUTOOWNER t [42102-176]

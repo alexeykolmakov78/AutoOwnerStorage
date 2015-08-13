@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style type="text/css">
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+        @import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+        body {
+            background: #dbdbdb;
+            font-size: 16px;
+            line-height: 32px;
+            color: #ffffff;
+            word-wrap: break-word !important;
+            font-family: 'Open Sans', sans-serif;
+            margin: 50px 50px;
+        }
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            color: #FFF;
+        }
+
+        h3 {
+            font-size: 30px;
+            text-align: center;
+            /*color: #FFF;*/
+        }
+
+        h3 a {
+            color: #FFF;
+        }
+
+        a {
+            color: #FFF;
+        }
+
+        h1 {
+            margin-top: 100px;
+            text-align: center;
+            font-size: 60px;
+            font-family: 'Bree Serif', 'serif';
+        }
+
+        #container {
+            margin: 0 auto;
+            max-width: 890px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        #relatedContent {
+            max-width: 800px;
+            margin: 200px auto;
+        }
+
+        #relatedContent .item {
+            max-width: 44%;
+            padding: 3%;
+            float: left;
+            text-align: center;
+        }
+
+        #relatedContent .item a img {
+            max-width: 100%;
+        }
+
+        nav {
+            margin: 50px 0;
+            background-color: #E64A19;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+        }
+
+        nav ul li {
+            display: inline-block;
+            background-color: #E64A19;
+        }
+
+        nav a {
+            display: block;
+            padding: 0 10px;
+            color: #FFF;
+            font-size: 20px;
+            line-height: 60px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #000000;
+        }
+
+        /* Hide Dropdowns by Default */
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 60px;
+        }
+
+        /* Display Dropdowns on Hover */
+        nav ul li:hover > ul {
+            display: inherit;
+        }
+
+        /* Fisrt Tier Dropdown */
+        nav ul ul li {
+            width: 170px;
+            float: none;
+            display: list-item;
+            position: relative;
+        }
+
+        /* Second, Third and more Tiers	*/
+        nav ul ul ul li {
+            position: relative;
+            top: -60px;
+            left: 170px;
+        }
+
+        /* Change this in order to change the Dropdown symbol */
+        li > a:after {
+            content: ' +';
+        }
+
+        li > a:only-child:after {
+            content: '';
+        }
+
+        table {
+            font-size: 16px;
+            color: #3f3f3f;
+            background-color: #dbdbdb;
+            margin: 50px 50px;
+        }
+    </style>
+    <!--<title></title>-->
+</head>
+<p>
+
+<h3>Information about vehicles and owners</h3>
+</p>
+
+<body>
+
+<div id="container">
+    <nav>
+        <ul>
+            <li><a href="/auto">Home</a></li>
+            <li><a href="#">Vehicles</a>
+                <ul>
+                    <li><a href="/auto/vehicle">Get All</a>
+                    </li>
+                    <li><a href="#">Search</a>
+                        <ul>
+                            <li><a href="#">By Id</a></li>
+                            <li><a href="#">By number part</a></li>
+                            <li><a href="#">By owner Id</a></li>
+                            <li><a href="#">By owner last name</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Auto-Owners</a>
+                <ul>
+                    <li><a href="/auto/autoowner">Get All</a>
+                    </li>
+                    <li><a href="#">Search</a>
+                        <ul>
+                            <li><a href="#">By Id</a></li>
+                            <li><a href="#">By vehicle Id</a></li>
+                            <li><a href="#">By vehicle number </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Road accidents</a>
+                <ul>
+                    <li><a href="/auto/rta">Get All</a>
+                    </li>
+                    <li><a href="#">Search</a>
+                        <ul>
+                            <li><a href="#">By date</a></li>
+                            <li><a href="#">By vehicle Id</a></li>
+                            <li><a href="#">By vehicle number </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Offences</a>
+                <ul>
+                    <li><a href="/auto/offence">Get All</a>
+                    </li>
+                    <li><a href="#">Search</a>
+                        <ul>
+                            <li><a href="#">By Id</a></li>
+                            <li><a href="#">By owner Id</a></li>
+                            <li><a href="#">By type </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+</body>
+</html>
